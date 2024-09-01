@@ -1,0 +1,15 @@
+.nav-conatiner {
+  padding-top: 40px; /* Aumenta o padding superior */
+  padding-bottom: 40px; /* Aumenta o padding inferior */
+  font-size: 20px; /* Aumenta o tamanho da fonte */
+}
+
+.navbar-brand {
+  font-size: 24px; /* Tamanho da fonte do nome do hotel */
+  font-weight: bold; /* Negrito para o nome do hotel */
+}
+
+.ms-2 {
+  padding: 12px;
+  width: 150px;
+}

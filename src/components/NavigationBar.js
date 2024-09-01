@@ -1,12 +1,15 @@
 import React from "react";
 import { Navbar, Nav, NavDropdown, Container, Button } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "./css/navbarStyle.css";
 
 function NavigationBar() {
   return (
-    <Navbar bg="light" expand="lg" fixed="top">
+    <Navbar className="nav-conatiner" bg="light" expand="lg" fixed="top">
       <Container>
-        <Navbar.Brand href="#home">In Command</Navbar.Brand>
+        <Navbar.Brand className="navbar-brand" href="#home">
+          In Command
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">

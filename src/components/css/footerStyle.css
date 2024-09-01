@@ -1,0 +1,15 @@
+footer {
+  margin-top: 10px;
+  background-color: #639cf7;
+  padding: 20px 0;
+  color: white;
+}
+
+h2 {
+  font-weight: bold;
+}
+
+.conditions {
+  color: white;
+  text-decoration: none;
+}

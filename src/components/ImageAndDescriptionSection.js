@@ -15,22 +15,25 @@ function ImageAndDescriptionSection() {
             <Carousel.Item>
               <img
                 className="d-block w-100"
-                src="https://via.placeholder.com/800x400?text=Imagem+4"
+                src="https://visualpraiahotel.com.br/wp-content/uploads/2021/11/hotel-beira-mar-em-natal-Visual-Praia-2.jpg"
                 alt="Imagem 4"
+                height="500px"
               />
             </Carousel.Item>
             <Carousel.Item>
               <img
                 className="d-block w-100"
-                src="https://via.placeholder.com/800x400?text=Imagem+5"
+                src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/1a/ed/39/hotel-presidente-4s.jpg?w=1200&h=-1&s=1"
                 alt="Imagem 5"
+                height="500px"
               />
             </Carousel.Item>
             <Carousel.Item>
               <img
                 className="d-block w-100"
-                src="https://via.placeholder.com/800x400?text=Imagem+6"
+                src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/1a/ed/5d/hotel-presidente-4s.jpg?w=1200&h=-1&s=1"
                 alt="Imagem 6"
+                height="500px"
               />
             </Carousel.Item>
           </Carousel>
@@ -38,7 +41,7 @@ function ImageAndDescriptionSection() {
 
         {/* Coluna da Descrição e Botão */}
         <Col lg={4} className="d-flex flex-column justify-content-center">
-          <div className="p-4" style={{ textAlign: "justify" }}>
+          <div className="p-4">
             <h2>Bem-vindo ao Nosso Hotel</h2>
             <p>
               Desfrute de uma estadia inesquecível em nosso hotel, com

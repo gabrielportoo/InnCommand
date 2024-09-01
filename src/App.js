@@ -4,6 +4,9 @@ import ImageCarousel from "./components/CarrosselImage";
 import ImageAndDescriptionSection from "./components/ImageAndDescriptionSection";
 import RoomCarouselAndDescriptionSection from "./components/RoomCarouselAndDescriptionSection";
 import ServicesSection from "./components/ServicesSection";
+import TestimonialsSection from "./components/TestimonialsSection";
+import GoogleMapSection from "./components/GoogleMapSection";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -13,6 +16,9 @@ function App() {
       <ImageAndDescriptionSection />
       <RoomCarouselAndDescriptionSection />
       <ServicesSection />
+      <TestimonialsSection />
+      <GoogleMapSection />
+      <Footer />
     </div>
   );
 }

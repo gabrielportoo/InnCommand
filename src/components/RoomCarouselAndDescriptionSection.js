@@ -31,22 +31,25 @@ function RoomCarouselAndDescriptionSection() {
             <Carousel.Item>
               <img
                 className="d-block w-100"
-                src="https://via.placeholder.com/800x400?text=Imagem+7"
+                src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/0d/34/66/hotel-presidente-4s.jpg?w=1200&h=-1&s=1"
                 alt="Imagem 7"
+                height="400px"
               />
             </Carousel.Item>
             <Carousel.Item>
               <img
                 className="d-block w-100"
-                src="https://via.placeholder.com/800x400?text=Imagem+8"
+                src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/13/e9/cf/18/hotel-presidente-4s-bano.jpg?w=1200&h=-1&s=1"
                 alt="Imagem 8"
+                height="400px"
               />
             </Carousel.Item>
             <Carousel.Item>
               <img
                 className="d-block w-100"
-                src="https://via.placeholder.com/800x400?text=Imagem+9"
+                src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/18/01/d3/37/hotel-presidente.jpg?w=1200&h=-1&s=1"
                 alt="Imagem 9"
+                height="400px"
               />
             </Carousel.Item>
           </Carousel>
