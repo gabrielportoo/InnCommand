@@ -1,4 +1,5 @@
 import { Container, Carousel, Button, Row, Col } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 function ImageAndDescriptionSection() {
   return (
@@ -49,7 +50,7 @@ function ImageAndDescriptionSection() {
               localização perfeita para explorar a cidade. Reserve sua estadia
               agora e experimente o melhor que temos a oferecer.
             </p>
-            <Button variant="primary" href="#reservar">
+            <Button variant="primary" as={Link} to="/reservar">
               RESERVAR
             </Button>
           </div>

@@ -10,7 +10,7 @@ function Footer() {
         {/* Nome do Hotel */}
         <Row className="text-center mb-3">
           <Col>
-            <h2>In Command Hotel</h2>
+            <h2>InnCommand Hotel</h2>
           </Col>
         </Row>
 

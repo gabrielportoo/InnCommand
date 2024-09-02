@@ -1,4 +1,5 @@
 import { Container, Row, Col, Button, Carousel } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 function RoomCarouselAndDescriptionSection() {
   return (
@@ -14,7 +15,7 @@ function RoomCarouselAndDescriptionSection() {
               equipado com todas as comodidades modernas que você espera,
               garantindo uma experiência de hospedagem memorável.
             </p>
-            <Button variant="secondary" href="#quartos">
+            <Button variant="secondary" as={Link} to={"/quartos"}>
               MAIS INFORMAÇÕES
             </Button>
           </div>

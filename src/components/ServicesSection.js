@@ -15,7 +15,7 @@ function ServicesSection() {
       <Row className="mt-4">
         <Col md={4}>
           <div className="service-image-wrapper">
-            <a href="#quartos">
+            <a href="/quartos">
               <img
                 src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/0d/34/66/hotel-presidente-4s.jpg?w=1200&h=-1&s=1"
                 alt="Quartos"

@@ -1,5 +1,6 @@
 import React from "react";
 import { Navbar, Nav, NavDropdown, Container, Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./css/navbarStyle.css";
 
@@ -7,13 +8,15 @@ function NavigationBar() {
   return (
     <Navbar className="nav-conatiner" bg="light" expand="lg" fixed="top">
       <Container>
-        <Navbar.Brand className="navbar-brand" href="#home">
-          In Command
+        <Navbar.Brand className="navbar-brand" as={Link} to={"/"}>
+          InnCommand
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#quartos">QUARTOS</Nav.Link>
+            <Nav.Link as={Link} to={"/quartos"}>
+              QUARTOS
+            </Nav.Link>
             <Nav.Link href="#fitness">FITNESS</Nav.Link>
             <Nav.Link href="#lazer">LAZER</Nav.Link>
             <Nav.Link href="#eventos">EVENTOS</Nav.Link>
@@ -37,7 +40,7 @@ function NavigationBar() {
             <Nav.Link href="#galeria">GALERIA</Nav.Link>
             <Nav.Link href="#contatos">CONTATOS</Nav.Link>
           </Nav>
-          <Button variant="outline-primary" href="#reservar" className="ms-2">
+          <Button className="button-style" as={Link} to={"/reservar"}>
             RESERVAR
           </Button>
         </Navbar.Collapse>
