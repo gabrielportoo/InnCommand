@@ -17,7 +17,7 @@ function NavigationBar() {
             <Nav.Link as={Link} to={"/quartos"}>
               QUARTOS
             </Nav.Link>
-            <Nav.Link href="#fitness">FITNESS</Nav.Link>
+            <Nav.Link as={Link} to={"/fitness"}>FITNESS</Nav.Link>
             <Nav.Link href="#lazer">LAZER</Nav.Link>
             <Nav.Link href="#eventos">EVENTOS</Nav.Link>
 
