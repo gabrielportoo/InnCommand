@@ -1,12 +1,14 @@
 import React from "react";
-import { Container, Row, Col, Button } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 
-function Rooms() {
+function TermosCondicoes() {
   return (
-    <Container className="my-5">
+    <Container className="termos-container">
       <Row>
         <Col>
-          <h2 style={{ paddingTop: "100px", textAlign: "center" }}>Quartos</h2>
+          <h2 style={{ paddingTop: "150px", textAlign: "center" }}>
+            Termos e Condições
+          </h2>
           <p style={{ textAlign: "justify" }}>
             Bem-vindo à nossa seção de quartos! Oferecemos uma variedade de
             opções de acomodação para atender às suas necessidades, desde
@@ -21,13 +23,10 @@ function Rooms() {
             privativos totalmente equipados. Além disso, oferecemos serviços de
             quarto 24 horas para sua conveniência.
           </p>
-          <Button variant="primary" href="/reservar">
-            Reservar Agora
-          </Button>
         </Col>
       </Row>
     </Container>
   );
 }
 
-export default Rooms;
+export default TermosCondicoes;

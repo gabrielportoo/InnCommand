@@ -1,9 +1,11 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import NavigationBar from "./NavigationBar";
-import HomePage from "./HomePage"; // Página principal com todo o conteúdo anterior
+import HomePage from "./HomePage";
 import Reserva from "./Reserva"; // Página de Reservas
-import Rooms from "./NavbarComponents/Rooms";
+import Lazer from "./NavbarComponents/Lazer";
+import Gallery from "./NavbarComponents/Gallery";
+import TermosCondicoes from "./ServicesAndCondition/TermosECondicoes";
 import Footer from "./Footer";
 
 function AppRoutes() {
@@ -15,8 +17,12 @@ function AppRoutes() {
         <Route path="/" element={<HomePage />} />
         {/* Reservas */}
         <Route path="/reservar" element={<Reserva />} />
-        {/* Quartos */}
-        <Route path="/quartos" element={<Rooms />} />
+        {/* Lazer */}
+        <Route path="/lazer" element={<Lazer />} />
+        {/* Galeria */}
+        <Route path="/galeria" element={<Gallery />} />
+        {/* Termos e Condições */}
+        <Route path="/termos-e-condicoes" element={<TermosCondicoes />} />
       </Routes>
       <Footer />
     </Router>

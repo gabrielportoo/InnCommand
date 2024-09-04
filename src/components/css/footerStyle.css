@@ -1,8 +1,8 @@
 footer {
   margin-top: 10px;
-  background-color: #639cf7;
+  background-color: #dfe3e7;
   padding: 20px 0;
-  color: white;
+  color: #000000;
 }
 
 h2 {
@@ -10,6 +10,6 @@ h2 {
 }
 
 .conditions {
-  color: white;
+  color: #000000;
   text-decoration: none;
 }

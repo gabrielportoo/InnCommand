@@ -1,0 +1,27 @@
+.lazer-section {
+  text-align: center;
+}
+
+.main-image {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+}
+
+.lazer-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.lazer-image {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+hr {
+  border: none; /* Remove a borda padrão */
+  border-top: 4px solid #767575; /* Define uma nova borda superior mais grossa */
+  margin: 20px auto; /* Centraliza a linha e adiciona espaçamento vertical */
+}

@@ -18,7 +18,9 @@ function NavigationBar() {
               QUARTOS
             </Nav.Link>
             <Nav.Link href="#fitness">FITNESS</Nav.Link>
-            <Nav.Link href="#lazer">LAZER</Nav.Link>
+            <Nav.Link as={Link} to={"/lazer"}>
+              LAZER
+            </Nav.Link>
             <Nav.Link href="#eventos">EVENTOS</Nav.Link>
 
             <NavDropdown title="RESTAURANTES" id="basic-nav-dropdown-2">
@@ -37,7 +39,9 @@ function NavigationBar() {
               </NavDropdown.Item>
             </NavDropdown>
 
-            <Nav.Link href="#galeria">GALERIA</Nav.Link>
+            <Nav.Link as={Link} to={"/galeria"}>
+              GALERIA
+            </Nav.Link>
             <Nav.Link href="#contatos">CONTATOS</Nav.Link>
           </Nav>
           <Button className="button-style" as={Link} to={"/reservar"}>

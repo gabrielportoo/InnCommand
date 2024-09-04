@@ -4,22 +4,7 @@ import "./css/comentImage.css";
 
 function TestimonialsSection() {
   return (
-    <div
-      className="testimonials-section"
-      style={{ position: "relative", overflow: "hidden" }}
-    >
-      {/* Imagem de Fundo */}
-      <img
-        src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/511586703.jpg?k=c443a4558ec960c515711fa17b18dcfd5e4b6c8abfe16fb18cec03588af65093&o=&hp=1"
-        alt="Piscina do Hotel"
-        className="w-100"
-        style={{
-          filter: "brightness(50%)",
-          height: "600px",
-          objectFit: "cover",
-        }}
-      />
-
+    <div className="testimonials-section">
       {/* Carrossel de Comentários */}
       <Container className="container-edition">
         <Carousel
@@ -30,7 +15,7 @@ function TestimonialsSection() {
         >
           <Carousel.Item>
             <div>
-              <p style={{ fontSize: "1.5rem", fontStyle: "italic" }}>
+              <p>
                 "A estadia foi incrível! O serviço é de primeira e as
                 acomodações são muito confortáveis."
               </p>
@@ -39,7 +24,7 @@ function TestimonialsSection() {
           </Carousel.Item>
           <Carousel.Item>
             <div>
-              <p style={{ fontSize: "1.5rem", fontStyle: "italic" }}>
+              <p>
                 "Hotel maravilhoso, com ótima localização e excelente
                 atendimento. Super recomendo!"
               </p>
@@ -48,7 +33,7 @@ function TestimonialsSection() {
           </Carousel.Item>
           <Carousel.Item>
             <div>
-              <p style={{ fontSize: "1.5rem", fontStyle: "italic" }}>
+              <p>
                 "Experiência fantástica! Ótima opção para relaxar e curtir as
                 férias."
               </p>
