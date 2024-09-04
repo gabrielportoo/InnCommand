@@ -13,10 +13,11 @@ function Fitness() {
                 width: '100%' 
             }} />
 
-<Container>
+            <Container>
                 <Row>
                     <Col style={{ textAlign: "center" }}>
                         <h2 style={{ paddingTop: "50px", textAlign: "center" }}>Fitness</h2>
+                        <hr></hr>
                         
                         {/* Imagem com link, centralizada e ocupando 30% da largura */}
                         <a href="https://gramado.blog.br/wp-content/uploads/2019/10/varanda-das-bromelias-academia.jpg">
@@ -42,6 +43,17 @@ function Fitness() {
                     </Col>
                 </Row>
             </Container>
+
+            {/* Imagem com efeito Parallax abaixo do Container */}
+            <div style={{ 
+                backgroundImage: 'url(https://images.pexels.com/photos/518244/pexels-photo-518244.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)', 
+                backgroundAttachment: 'fixed',  // Efeito Parallax
+                backgroundSize: 'cover', 
+                backgroundPosition: 'center', 
+                height: '500px',  // ajuste a altura conforme necessário
+                width: '100%', 
+                marginTop: '20px'
+            }} />
         </div>
     );
 }
