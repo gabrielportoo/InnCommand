@@ -6,7 +6,11 @@ import Reserva from "./Reserva"; // Página de Reservas
 import Lazer from "./NavbarComponents/Lazer";
 import Gallery from "./NavbarComponents/Gallery";
 import TermosCondicoes from "./ServicesAndCondition/TermosECondicoes";
+import Rooms from "./NavbarComponents/Rooms";
+import Fitness from "./NavbarComponents/Fitness";
 import Footer from "./Footer";
+import Events from "./NavbarComponents/Events";
+import Contacts from "./NavbarComponents/Contacts";
 
 function AppRoutes() {
   return (
@@ -23,6 +27,14 @@ function AppRoutes() {
         <Route path="/galeria" element={<Gallery />} />
         {/* Termos e Condições */}
         <Route path="/termos-e-condicoes" element={<TermosCondicoes />} />
+        {/* Quartos */}
+        <Route path="/quartos" element={<Rooms />} />
+        {/* Fitness */}
+        <Route path="/fitness" element={<Fitness />} />
+        {/* Events */}
+        <Route path="/events" element={<Events />} />
+        {/* Contacts */}
+        <Route path="/contacts" element={<Contacts />} />
       </Routes>
       <Footer />
     </Router>

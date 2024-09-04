@@ -17,11 +17,13 @@ function NavigationBar() {
             <Nav.Link as={Link} to={"/quartos"}>
               QUARTOS
             </Nav.Link>
-            <Nav.Link href="#fitness">FITNESS</Nav.Link>
-            <Nav.Link as={Link} to={"/lazer"}>
-              LAZER
+            <Nav.Link as={Link} to={"/fitness"}>
+              FITNESS
             </Nav.Link>
-            <Nav.Link href="#eventos">EVENTOS</Nav.Link>
+            <Nav.Link href="#lazer">LAZER</Nav.Link>
+            <Nav.Link as={Link} to={"/events"}>
+              EVENTOS
+            </Nav.Link>
 
             <NavDropdown title="RESTAURANTES" id="basic-nav-dropdown-2">
               <NavDropdown.Item href="#coffee-shop">
@@ -39,10 +41,10 @@ function NavigationBar() {
               </NavDropdown.Item>
             </NavDropdown>
 
-            <Nav.Link as={Link} to={"/galeria"}>
-              GALERIA
+            <Nav.Link href="#galeria">GALERIA</Nav.Link>
+            <Nav.Link as={Link} to={"/contacts"}>
+              CONTATOS
             </Nav.Link>
-            <Nav.Link href="#contatos">CONTATOS</Nav.Link>
           </Nav>
           <Button className="button-style" as={Link} to={"/reservar"}>
             RESERVAR
