@@ -13,3 +13,12 @@
   padding: 12px;
   width: 150px;
 }
+
+.nav-link:hover {
+  text-decoration: underline;
+  color: #2f2f2f;
+}
+
+.nav-link {
+  transition: text-decoration 0.3s, color 0.3s;
+}

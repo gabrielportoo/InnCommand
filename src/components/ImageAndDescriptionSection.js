@@ -44,13 +44,22 @@ function ImageAndDescriptionSection() {
         <Col lg={4} className="d-flex flex-column justify-content-center">
           <div className="p-4">
             <h2>Bem-vindo ao Nosso Hotel</h2>
-            <p>
+            <p style={{ textAlign: "justify" }}>
               Desfrute de uma estadia inesquecível em nosso hotel, com
               acomodações de luxo, serviços de primeira classe, e uma
               localização perfeita para explorar a cidade. Reserve sua estadia
               agora e experimente o melhor que temos a oferecer.
             </p>
-            <Button variant="primary" as={Link} to="/reservar">
+            <Button
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+              variant="primary"
+              as={Link}
+              to="/reservar"
+            >
               RESERVAR
             </Button>
           </div>

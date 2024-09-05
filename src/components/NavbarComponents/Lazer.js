@@ -1,6 +1,6 @@
 // components/Lazer.js
 import React from "react";
-import { Container, Row, Col, Image } from "react-bootstrap";
+import { Container, Row, Col, Image, Button } from "react-bootstrap";
 import "../css/navComponents/lazerStyle.css"; // Importa o arquivo CSS
 
 function Lazer() {
@@ -20,6 +20,26 @@ function Lazer() {
 
       <hr />
 
+      {/* Descrição das Atividades de Lazer */}
+      <p className="lazer-description text-justify mt-4">
+        No nosso hotel, você encontrará uma variedade de atividades de lazer
+        para todas as idades. Desfrute de nossas piscinas ao ar livre com vista
+        para o mar, participe de aulas de hidroginástica, relaxe nas saunas ou
+        aproveite os tratamentos de spa. Para os mais aventureiros, oferecemos
+        passeios de caiaque, trilhas guiadas e aulas de mergulho. Temos também
+        um clube infantil para entreter os pequenos com atividades
+        supervisionadas enquanto você relaxa. Venha desfrutar de um ambiente
+        tranquilo e cheio de opções para se divertir e relaxar!
+      </p>
+
+      <Button
+        style={{ margin: "20px auto" }}
+        variant="primary"
+        href="/reservar"
+      >
+        Reservar Agora
+      </Button>
+
       {/* Imagens de Áreas de Lazer */}
       <Row className="mt-4">
         <Col md={6} className="d-flex justify-content-center">
@@ -31,22 +51,11 @@ function Lazer() {
         </Col>
         <Col md={6} className="d-flex justify-content-center">
           <Image
-            src="https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?auto=compress&cs=tinysrgb&w=600"
+            src="https://gramado.blog.br/wp-content/uploads/2019/10/varanda-das-bromelias-academia.jpg"
             alt="Área de Lazer 2"
             className="img-fluid"
           />
         </Col>
-        {/* Descrição das Atividades de Lazer */}
-        <p className="lazer-description text-justify mt-4">
-          No nosso hotel, você encontrará uma variedade de atividades de lazer
-          para todas as idades. Desfrute de nossas piscinas ao ar livre com
-          vista para o mar, participe de aulas de hidroginástica, relaxe nas
-          saunas ou aproveite os tratamentos de spa. Para os mais aventureiros,
-          oferecemos passeios de caiaque, trilhas guiadas e aulas de mergulho.
-          Temos também um clube infantil para entreter os pequenos com
-          atividades supervisionadas enquanto você relaxa. Venha desfrutar de um
-          ambiente tranquilo e cheio de opções para se divertir e relaxar!
-        </p>
 
         <hr />
       </Row>

@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import ScrollToTop from "./ScrollToTop";
 import NavigationBar from "./NavigationBar";
 import HomePage from "./HomePage";
 import Reserva from "./Reserva"; // Página de Reservas
@@ -15,6 +16,7 @@ import Contacts from "./NavbarComponents/Contacts";
 function AppRoutes() {
   return (
     <Router>
+      <ScrollToTop />
       <NavigationBar />
       <Routes>
         {/* Home */}
@@ -25,8 +27,6 @@ function AppRoutes() {
         <Route path="/lazer" element={<Lazer />} />
         {/* Galeria */}
         <Route path="/galeria" element={<Gallery />} />
-        {/* Termos e Condições */}
-        <Route path="/termos-e-condicoes" element={<TermosCondicoes />} />
         {/* Quartos */}
         <Route path="/quartos" element={<Rooms />} />
         {/* Fitness */}
@@ -35,6 +35,8 @@ function AppRoutes() {
         <Route path="/events" element={<Events />} />
         {/* Contacts */}
         <Route path="/contacts" element={<Contacts />} />
+        {/* Termos e Condições */}
+        <Route path="/termos-e-condicoes" element={<TermosCondicoes />} />
       </Routes>
       <Footer />
     </Router>

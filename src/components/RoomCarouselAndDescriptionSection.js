@@ -9,13 +9,26 @@ function RoomCarouselAndDescriptionSection() {
         <Col lg={4} className="d-flex flex-column justify-content-center">
           <div className="p-4" style={{ textAlign: "justify" }}>
             <h2>Quartos do Hotel</h2>
-            <p>
+            <p
+              style={{
+                textAlign: "justify",
+              }}
+            >
               Conheça nossos quartos elegantes e confortáveis, projetados para
               oferecer o máximo de conforto e relaxamento. Cada quarto é
               equipado com todas as comodidades modernas que você espera,
               garantindo uma experiência de hospedagem memorável.
             </p>
-            <Button variant="secondary" as={Link} to={"/quartos"}>
+            <Button
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+              variant="secondary"
+              as={Link}
+              to={"/quartos"}
+            >
               MAIS INFORMAÇÕES
             </Button>
           </div>

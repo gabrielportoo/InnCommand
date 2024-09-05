@@ -50,6 +50,8 @@ function Rooms() {
               e privacidade.
             </p>
 
+            <hr />
+
             <a href="https://images.pexels.com/photos/262048/pexels-photo-262048.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
               <div
                 style={{
@@ -76,6 +78,8 @@ function Rooms() {
               produtos de higiene premium, oferecendo uma estadia sofisticada.
             </p>
 
+            <hr />
+
             <a href="https://images.pexels.com/photos/271619/pexels-photo-271619.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
               <div
                 style={{
@@ -96,11 +100,14 @@ function Rooms() {
                 textAlign: "center",
                 marginLeft: "20%",
                 marginRight: "20%",
+                marginBottom: "40px",
               }}
             >
               Acomodação básica e confortável com cama, banheiro privativo, TV e
               Wi-Fi, ideal para estadias rápidas.
             </p>
+
+            <hr style={{ paddingBottom: "10px" }} />
 
             <Button variant="primary" href="/reservar">
               Reservar Agora
@@ -119,7 +126,7 @@ function Rooms() {
           backgroundPosition: "center",
           height: "500px", // ajuste a altura conforme necessário
           width: "100%",
-          marginTop: "20px",
+          marginTop: "30px",
         }}
       />
     </div>
