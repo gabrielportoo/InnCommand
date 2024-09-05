@@ -8,6 +8,7 @@ import Fitness from "./NavbarComponents/Fitness";
 import Footer from "./Footer";
 import Events from "./NavbarComponents/Events";
 import Contacts from "./NavbarComponents/Contacts";
+import Restaurants from "./NavbarComponents/Restaurants";
 
 function AppRoutes() {
   return (
@@ -26,6 +27,8 @@ function AppRoutes() {
         <Route path="/events" element={<Events />} />
         {/* Contacts */}
         <Route path="/contacts" element={<Contacts />} />
+        {/* Restaurants */}
+        <Route path="/restaurants" element={<Restaurants />} />
       </Routes>
       <Footer />
     </Router>
