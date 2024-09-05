@@ -17,12 +17,22 @@ function NavigationBar() {
             <Nav.Link as={Link} to={"/quartos"}>
               QUARTOS
             </Nav.Link>
-            <Nav.Link as={Link} to={"/fitness"}>FITNESS</Nav.Link>
-            <Nav.Link href="#lazer">LAZER</Nav.Link>
-            <Nav.Link as={Link} to={"/events"}>EVENTOS</Nav.Link>
+            <Nav.Link as={Link} to={"/fitness"}>
+              FITNESS
+            </Nav.Link>
+            <Nav.Link as={Link} to={"/lazer"}>
+              LAZER
+            </Nav.Link>
+            <Nav.Link as={Link} to={"/events"}>
+              EVENTOS
+            </Nav.Link>
             <Nav.Link as={Link} to={"/restaurants"}>RESTAURANTES</Nav.Link>
-            <Nav.Link href="#galeria">GALERIA</Nav.Link>
-            <Nav.Link as={Link} to={"/contacts"}>CONTATOS</Nav.Link>
+            <Nav.Link as={Link} to={"/galeria"}>
+              GALERIA
+            </Nav.Link>
+            <Nav.Link as={Link} to={"/contacts"}>
+              CONTATOS
+            </Nav.Link>
           </Nav>
           <Button className="button-style" as={Link} to={"/reservar"}>
             RESERVAR

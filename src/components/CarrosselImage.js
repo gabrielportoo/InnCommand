@@ -3,7 +3,12 @@ import { Carousel } from "react-bootstrap";
 function ImageCarousel() {
   return (
     <div style={{ marginTop: "50px" }}>
-      <Carousel interval={2000} fade>
+      <Carousel
+        indicators={false}
+        controls={false}
+        interval={4000}
+        pause={false}
+      >
         <Carousel.Item>
           <img
             className="d-block w-100"

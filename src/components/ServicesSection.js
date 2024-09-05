@@ -4,7 +4,8 @@ import "./css/imageStyle.css";
 function ServicesSection() {
   return (
     <Container className="my-5 text-center">
-      <h2>Nossos Serviços</h2> {/* Título centralizado */}
+      <h2>Nossos Serviços</h2>
+      <hr />
       <p className="mt-3" style={{ textAlign: "center" }}>
         Oferecemos uma variedade de serviços para tornar sua estadia confortável
         e inesquecível, incluindo quartos luxuosos, espaços para eventos e
@@ -27,7 +28,7 @@ function ServicesSection() {
         </Col>
         <Col md={4}>
           <div className="service-image-wrapper">
-            <a href="#eventos">
+            <a href="/events">
               <img
                 src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/73/9b/f0/hotel-presidente-4s.jpg?w=1200&h=-1&s=1"
                 alt="Eventos"

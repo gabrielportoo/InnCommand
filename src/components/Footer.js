@@ -39,7 +39,7 @@ function Footer() {
               href="https://www.instagram.com"
               target="_blank"
               rel="noopener noreferrer"
-              style={{ color: "white", margin: "0 10px" }}
+              style={{ color: "#000000", margin: "0 10px" }}
             >
               <FaInstagram size={30} />
             </a>
@@ -47,13 +47,13 @@ function Footer() {
               href="https://www.facebook.com"
               target="_blank"
               rel="noopener noreferrer"
-              style={{ color: "white", margin: "0 10px" }}
+              style={{ color: "#000000", margin: "0 10px" }}
             >
               <FaFacebook size={30} />
             </a>
             <a
               href="mailto:contato@incommandhotel.com"
-              style={{ color: "white", margin: "0 10px" }}
+              style={{ color: "#000000", margin: "0 10px" }}
             >
               <FaEnvelope size={30} />
             </a>

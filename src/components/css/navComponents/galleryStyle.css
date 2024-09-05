@@ -1,0 +1,31 @@
+/* Arquivo: css/Galeria.css */
+
+.gallery-container {
+  text-align: center;
+  padding: 150px;
+}
+
+.galeria-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+p {
+  text-align: center;
+  font-size: 20px;
+}
+
+.galeria-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Estilo Personalizado para a Linha Horizontal */
+hr {
+  border: none; /* Remove a borda padrão */
+  border-top: 4px solid #d3d3d3; /* Define uma nova borda superior mais grossa */
+  width: 100%; /* Define a largura da linha */
+  margin: 20px auto; /* Centraliza a linha e adiciona espaçamento vertical */
+}
