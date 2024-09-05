@@ -12,6 +12,7 @@ import Fitness from "./NavbarComponents/Fitness";
 import Footer from "./Footer";
 import Events from "./NavbarComponents/Events";
 import Contacts from "./NavbarComponents/Contacts";
+import Restaurants from "./NavbarComponents/Restaurants";
 
 function AppRoutes() {
   return (
@@ -37,6 +38,8 @@ function AppRoutes() {
         <Route path="/contacts" element={<Contacts />} />
         {/* Termos e Condições */}
         <Route path="/termos-e-condicoes" element={<TermosCondicoes />} />
+        {/* Restaurants */}
+        <Route path="/restaurants" element={<Restaurants />} />
       </Routes>
       <Footer />
     </Router>

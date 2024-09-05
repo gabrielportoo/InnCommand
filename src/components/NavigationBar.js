@@ -1,5 +1,5 @@
 import React from "react";
-import { Navbar, Nav, NavDropdown, Container, Button } from "react-bootstrap";
+import { Navbar, Nav, Container, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./css/navbarStyle.css";
@@ -26,23 +26,7 @@ function NavigationBar() {
             <Nav.Link as={Link} to={"/events"}>
               EVENTOS
             </Nav.Link>
-
-            <NavDropdown title="RESTAURANTES" id="basic-nav-dropdown-2">
-              <NavDropdown.Item href="#coffee-shop">
-                COFFEE SHOP
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#la-marine">LA MARINE</NavDropdown.Item>
-              <NavDropdown.Item href="#pool-bar">
-                POOL BAR E RESTAURANTE
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#casa-de-cha">
-                CASA DE CHÁ
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#room-service">
-                ROOM SERVICE
-              </NavDropdown.Item>
-            </NavDropdown>
-
+            <Nav.Link as={Link} to={"/restaurants"}>RESTAURANTES</Nav.Link>
             <Nav.Link as={Link} to={"/galeria"}>
               GALERIA
             </Nav.Link>
