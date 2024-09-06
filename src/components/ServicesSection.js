@@ -40,7 +40,7 @@ function ServicesSection() {
         </Col>
         <Col md={4}>
           <div className="service-image-wrapper">
-            <a href="#restaurantes">
+            <a href="/restaurants">
               <img
                 src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/0d/34/47/hotel-presidente-4s.jpg?w=1200&h=-1&s=1"
                 alt="Restaurantes"
