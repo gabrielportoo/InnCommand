@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import ScrollToTop from "./ScrollToTop";
 import NavigationBar from "./NavigationBar";
 import HomePage from "./HomePage";
-import Reserva from "./Reserva"; // Página de Reservas
+import Reserva from "./Reserva";
 import Lazer from "./NavbarComponents/Lazer";
 import Gallery from "./NavbarComponents/Gallery";
 import TermosCondicoes from "./ServicesAndCondition/TermosECondicoes";
