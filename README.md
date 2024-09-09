@@ -1,70 +1,20 @@
-# Getting Started with Create React App
+# In Command Hotel
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Descrição
 
-## Available Scripts
+O projeto **In Command Hotel** é uma aplicação web para um hotel fictício, desenvolvida usando React e Bootstrap no Front-End. O site oferece uma experiência de usuário intuitiva e visualmente agradável, permitindo aos visitantes explorar os serviços do hotel, fazer reservas e visualizar informações relevantes.
 
-In the project directory, you can run:
+## Funcionalidades
 
-### `npm start`
+- **Barra de Navegação:** Navegação intuitiva com links para as principais seções do site, incluindo Quartos, Fitness, Lazer, Eventos, e mais.
+- **Carrosséis de Imagens:** Seções interativas com carrosséis de imagens para destacar as características e a atmosfera do hotel.
+- **Páginas de Serviços e Galeria:** Páginas dedicadas com informações detalhadas sobre serviços oferecidos e uma galeria de imagens do hotel.
+- **Página de Reserva:** Formulário completo para realizar reservas, incluindo seleção de datas, número de hóspedes, tipo de quarto e informações de contato.
+- **Termos e Condições:** Página com termos e condições simples e genéricos para o uso do site.
+- **Localização:** Mapa do Google Maps indicando a localização do hotel.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Tecnologias Utilizadas no Front
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **React:** Biblioteca para construção de interfaces de usuário.
+- **React Bootstrap:** Componentes Bootstrap para React.
+- **CSS:** Estilização personalizada para aprimorar o design e a experiência do usuário.
