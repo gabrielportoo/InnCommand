@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Form, Button, Col, Row } from "react-bootstrap";
 import axios from "axios";
 import "./css/reservaStyle.css";
-
+//
 function ReservationPage() {
   const [reservationDetails, setReservationDetails] = useState({
     checkIn: "",
