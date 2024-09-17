@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { Form, Button, Col, Row } from "react-bootstrap";
-import axios from "axios";
 import "./css/reservaStyle.css";
+import { ToastContainer, toast, Flip } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 //
 function ReservationPage() {
   const [reservationDetails, setReservationDetails] = useState({
@@ -40,6 +41,18 @@ function ReservationPage() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    toast.success("Reserva realizada com sucesso!", {
+      position: "top-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+      transition: Flip,
+    });
   };
 
   return (
@@ -47,6 +60,9 @@ function ReservationPage() {
       <h1 className="reservation-title">Faça sua Reserva</h1>
       <Form onSubmit={handleSubmit}>
         <Row>
+          <ToastContainer />
+          {/* Same as */}
+          <ToastContainer />
           <Col md={6}>
             <Form.Group controlId="formCheckIn">
               <Form.Label>Check-in</Form.Label>
