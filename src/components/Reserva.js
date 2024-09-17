@@ -38,46 +38,8 @@ function ReservationPage() {
     }));
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    try {
-      // Cadastrar usuário
-      const userResponse = await axios.post(
-        "https://inncommand.vercel.app/users",
-        {
-          name: reservationDetails.name,
-          email: reservationDetails.email,
-          phone: reservationDetails.phone,
-        }
-      );
-      const userId = userResponse.data.id;
-
-      // Cadastrar quarto
-      const roomResponse = await axios.post(
-        "https://inncommand.vercel.app/rooms",
-        {
-          type: reservationDetails.type,
-        }
-      );
-      const roomId = roomResponse.data.id;
-
-      // Cadastrar reserva
-      const bookingResponse = await axios.post(
-        "https://inncommand.vercel.app/bookings",
-        {
-          userId: userId,
-          roomId: roomId,
-          startDate: reservationDetails.checkIn,
-          endDate: reservationDetails.checkOut,
-          totalPrice: reservationDetails.totalPrice,
-          status: reservationDetails.status,
-        }
-      );
-
-      console.log("Resposta da reserva:", bookingResponse.data);
-    } catch (error) {
-      console.error("Erro ao enviar os dados:", error);
-    }
   };
 
   return (
