@@ -13,6 +13,7 @@ import Footer from "./Footer";
 import Events from "./NavbarComponents/Events";
 import Contacts from "./NavbarComponents/Contacts";
 import Restaurants from "./NavbarComponents/Restaurants";
+import TelaDeLogin from "./TelaDeLogin";
 
 function AppRoutes() {
   return (
@@ -20,8 +21,10 @@ function AppRoutes() {
       <ScrollToTop />
       <NavigationBar />
       <Routes>
+        {/* Tela de Login */}
+        <Route path="/" element={<TelaDeLogin />} />
         {/* Home */}
-        <Route path="/" element={<HomePage />} />
+        <Route path="/home" element={<HomePage />} />
         {/* Reservas */}
         <Route path="/reservar" element={<Reserva />} />
         {/* Lazer */}

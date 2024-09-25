@@ -1,14 +1,21 @@
 import React from "react";
 import { Navbar, Nav, Container, Button } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./css/navbarStyle.css";
 
 function NavigationBar() {
+  const location = useLocation();
+
+  // Não renderiza a NavigationBar se estiver na rota de login
+  if (location.pathname === "/") {
+    return null;
+  }
+
   return (
     <Navbar className="nav-conatiner" bg="light" expand="lg" fixed="top">
       <Container>
-        <Navbar.Brand className="navbar-brand" as={Link} to={"/"}>
+        <Navbar.Brand className="navbar-brand" as={Link} to={"/home"}>
           InnCommand
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -26,17 +33,19 @@ function NavigationBar() {
             <Nav.Link as={Link} to={"/events"}>
               EVENTOS
             </Nav.Link>
-            <Nav.Link as={Link} to={"/restaurants"}>RESTAURANTES</Nav.Link>
+            <Nav.Link as={Link} to={"/restaurants"}>
+              RESTAURANTES
+            </Nav.Link>
             <Nav.Link as={Link} to={"/galeria"}>
               GALERIA
             </Nav.Link>
             <Nav.Link as={Link} to={"/contacts"}>
               CONTATOS
             </Nav.Link>
-          </Nav>
-          <Button className="button-style" as={Link} to={"/reservar"}>
+            <Button className="button-style" as={Link} to={"/reservar"}>
             RESERVAR
-          </Button>
+            </Button>
+          </Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>
