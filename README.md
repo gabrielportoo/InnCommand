@@ -18,3 +18,6 @@ O projeto **InnCommand Hotel** é uma aplicação web para um hotel fictício, d
 - **React:** Biblioteca para construção de interfaces de usuário.
 - **React Bootstrap:** Componentes Bootstrap para React.
 - **CSS:** Estilização personalizada para aprimorar o design e a experiência do usuário.
+
+## Tecnologia Utilizada no Back
+- **Firebase Firestore:** Banco de dados não relacional em nuvem
