@@ -20,4 +20,4 @@ O projeto **InnCommand Hotel** é uma aplicação web para um hotel fictício, d
 - **CSS:** Estilização personalizada para aprimorar o design e a experiência do usuário.
 
 ## Tecnologia Utilizada no Back
-- **Firebase Firestore:** Banco de dados não relacional em nuvem
+- **Firebase Firestore:** Banco de dados não relacional em nuvem.
