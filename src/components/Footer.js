@@ -32,6 +32,15 @@ function Footer() {
           </Col>
         </Row>
 
+        {/* Link para Tela de Login */}
+        <Row className="text-center mb-4">
+          <Col>
+            <a className="conditions2" href="/">
+              Sair da conta
+            </a>
+          </Col>
+        </Row>
+
         {/* Logos das Redes Sociais */}
         <Row className="text-center">
           <Col>
