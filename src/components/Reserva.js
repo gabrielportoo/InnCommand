@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Form, Button, Col, Row } from "react-bootstrap";
 import "./css/reservaStyle.css";
+import { db } from "../keys/firebaseConfig"; // Importação do Firebase
+import { collection, addDoc, Timestamp } from "firebase/firestore"; // Métodos do Firestore
 import { ToastContainer, toast, Flip } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 //
@@ -39,20 +41,59 @@ function ReservationPage() {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
-    toast.success("Reserva realizada com sucesso!", {
-      position: "top-right",
-      autoClose: 5000,
-      hideProgressBar: false,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: true,
-      progress: undefined,
-      theme: "light",
-      transition: Flip,
-    });
+    try {
+      // Adiciona a reserva ao Firestore
+      await addDoc(collection(db, "reservar"), {
+        checkIn: Timestamp.fromDate(new Date(reservationDetails.checkIn)),
+        checkOut: Timestamp.fromDate(new Date(reservationDetails.checkOut)),
+        guests: reservationDetails.guests,
+        roomType: reservationDetails.roomType,
+        name: reservationDetails.name,
+        email: reservationDetails.email,
+        phone: reservationDetails.phone,
+        createdAt: Timestamp.now(),
+      });
+
+      // Exibe o toast de sucesso
+      toast.success("Reserva realizada com sucesso!", {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+        transition: Flip,
+      });
+
+      // Opcional: limpar o formulário após a submissão bem-sucedida
+      setReservationDetails({
+        checkIn: "",
+        checkOut: "",
+        guests: 1,
+        roomType: "Standard",
+        name: "",
+        email: "",
+        phone: "",
+      });
+    } catch (error) {
+      console.error("Erro ao realizar a reserva: ", error);
+      toast.error("Erro ao realizar a reserva. Tente novamente!", {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+        transition: Flip,
+      });
+    }
   };
 
   return (
