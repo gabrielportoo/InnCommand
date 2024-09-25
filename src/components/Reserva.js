@@ -70,7 +70,7 @@ function ReservationPage() {
         transition: Flip,
       });
 
-      // Opcional: limpar o formulário após a submissão bem-sucedida
+      // Limpar o formulário após a submissão bem-sucedida
       setReservationDetails({
         checkIn: "",
         checkOut: "",
